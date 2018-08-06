@@ -1,0 +1,5 @@
+.text{
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 60rpx;
+}

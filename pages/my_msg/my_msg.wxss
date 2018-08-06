@@ -1,0 +1,26 @@
+.tele{
+  background-color: #EFEFEF;
+  font-weight:400;
+  height: 50rpx;
+  padding: 10rpx;
+  padding-left: 35rpx;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35rpx;
+  margin: 0px;
+}
+.font{
+   font-size: 25rpx;
+   font-weight:300;
+   margin:0rpx 0rpx 0rpx 20rpx;
+}
+.font_1{
+  font-size: 30rpx;
+  font-weight:500;
+}
+
+.font_2{
+   font-size: 25rpx;
+   font-weight:300;
+   margin:0rpx 0rpx 0rpx 20rpx;
+   color: red;
+}

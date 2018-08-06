@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgs}}" wx:key="imgid">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 功能栏 -->
+<view style='display: flex;flex-direction:row;margin-bottom:20rpx;'>
+  <view bindtap='sw_detail'>
+    <button class='msg_post' style='height:80rpx;width:80rpx;background-image:url({{logo_1}});'></button>
+    <text class='msg_font' style='width:150rpx'>公司详情</text>
+  </view>
+
+  <view bindtap='sw_category'>
+    <button class='msg_post' style='height:80rpx;width:80rpx;background-image:url({{logo_2}});'></button>
+    <text class='msg_font' style='width:150rpx'>产品列表</text>
+  </view>
+
+  <view bindtap='sw_passage'>
+    <button class='msg_post' style='height:80rpx;width:80rpx;background-image:url({{logo_3}});'></button>
+    <text class='msg_font' style='width:150rpx'>近期文章</text>
+  </view>
+
+  <view bindtap='sw_case'>
+    <button class='msg_post' style='height:80rpx;width:80rpx;background-image:url({{logo_4}});'></button>
+    <text class='msg_font' style='width:150rpx'>成功案例</text>
+  </view>
+</view>
+<!-- 间隔 -->
+<view style='width:100%;height:15rpx;background-color:#F3F3F3;'></view>
+<view>
+  <image src='{{show_1}}' style='width:198rpx; height:72rpx;margin:20rpx 0rpx 20rpx 276rpx;'></image>
+</view>
+<!-- 精品产品展示 -->
+<view wx:for="{{top_produce}}">
+  <view class='produce'>
+    <view class='prodece_img'>
+      <text>缩略图100*100</text>
+    </view>
+    <view style='width:500rpx;margin:20rpx 20rpx 20rpx 5rpx'>
+      <text class='title'>{{item.JSON_title}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 自定义弹框开始 -->
+<!-- <view wx:if="{{showModel}}" class="model">
+    <view class="modelTitle">
+      获取微信授权信息
+    </view>
+    <view class="modelBody">微信登录需要获取您的用户信息，请前往设置</view>
+    <view class="btns">
+      <button open-type="getUserInfo" class="agree" bindgetuserinfo="agreeGetUser" lang="zh_CN">去设置</button>
+    </view>
+  </view>
+  <view wx:if="{{showModel}}" class="mask"></view> -->
+<!-- 自定义弹框结束  -->
